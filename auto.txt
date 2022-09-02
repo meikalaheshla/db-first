@@ -1,0 +1,23 @@
+AUTO
+                        tipo          attributo
+
+auto_id                 Bigint          auto_increment,unique,notnull               PRIMARY KEY
+prezzo_ingresso         medium_int      notnull
+Prezzo_di_vendita       medium_int      notnull
+anni                    tiny_int        notnull
+km_percorsi             medium_int      notnull
+incidenti               varchar(2)      default:0
+targa                   char(8)         unique, notnull
+modello                  varchar(50)    notnull
+
+                                        (ho inserito tutti null da qui in poi perchè ho pensato che dal momento dell' inserimento della vettura il concessionario prima di metterla in vendita faccia delle verifiche e delle modifiche a seconda della potenziale resa della macchina quindi default 0 da cambiare post verifica/ modifica)
+
+
+
+abs                     tiny_int(1)     null,default(0)
+aria_condizionata       tiny_int(1)     null,default(0)
+cerchi_in_lega          tiny_int(1)     null,default(0)
+colore                  varchar(40)     null,
+danni_carrozzeria       tiny_int(1)     null,default(0)
+airbag                  tiny_int(1)     null,default(0)
+antifurto               tiny_int(1)     null,default(0)
